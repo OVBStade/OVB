@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Karriere im Finanzvertrieb – Versicherungen | Investment | Immobilien</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Starte deine Karriere im Bereich Versicherungen, Investment und Immobilien. Überdurchschnittliches Einkommen, volle Ausbildung, starke Struktur. Jetzt unverbindlich bewerben.">
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --bg-light: #111827;
+      --primary: #2563eb;
+      --primary-soft: rgba(37,99,235,0.12);
+      --accent: #22c55e;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --danger: #ef4444;
+      --border: #1f2937;
+      --radius-lg: 18px;
+      --radius-xl: 26px;
+      --shadow-soft: 0 18px 40px rgba(0,0,0,0.45);
+      --shadow-small: 0 8px 20px rgba(0,0,0,0.35);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #1f2937 0, #020617 50%, #020617 100%);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Layout */
+
+    .container {
+      width: 100%;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    header {
+      border-bottom: 1px solid rgba(148, 163, 184, 0.18);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(18px);
+      background: rgba(15, 23, 42, 0.9);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+    }
+
+    .logo-mark {
+      width: 32px;
+      height: 32px;
+      border-radius: 999px;
+      background: radial-gradient(circle at 30% 20%, #38bdf8, #2563eb 55%, #0f172a 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .nav-link:hover {
+      color: #e5e7eb;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.18s ease-out;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #2563eb, #4f46e5);
+      color: white;
+      box-shadow: var(--shadow-small);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 14px 30px rgba(37, 99, 235, 0.55);
+    }
+
+    .btn-outline {
+      border-color: rgba(148, 163, 184, 0.45);
+      background: rgba(15, 23, 42, 0.8);
+      color: var(--text);
+    }
+
+    .btn-outline:hover {
+      border-color: #e5e7eb;
+      background: rgba(15, 23, 42, 1);
+    }
+
+    main {
+      flex: 1;
+    }
+
+    section {
+      padding: 48px 0;
+    }
+
+    /* Hero */
+
+    .hero {
+      padding-top: 40px;
+      padding-bottom: 52px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+      gap: 32px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 4px 10px 4px 4px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      background: rgba(15, 23, 42, 0.9);
+      color: var(--muted);
+      font-size: 11px;
+      margin-bottom: 14px;
+    }
+
+    .eyebrow-pill {
+      background: rgba(34, 197, 94, 0.14);
+      color: #bbf7d0;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      font-weight: 600;
+    }
+
+    .hero-title {
+      font-size: clamp(28px, 3.4vw, 38px);
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 14px;
+    }
+
+    .hero-title span {
+      background: linear-gradient(120deg, #60a5fa, #a855f7, #22c55e);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: 15px;
+      color: var(--muted);
+      margin-bottom: 18px;
+      max-width: 520px;
+    }
+
+    .hero-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 18px;
+    }
+
+    .pill {
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .hero-trust {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .hero-trust span {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 18px;
+      height: 18px;
+      border-radius: 999px;
+      background: rgba(34, 197, 94, 0.2);
+      color: #bbf7d0;
+      font-size: 12px;
+    }
+
+    .hero-card {
+      border-radius: var(--radius-xl);
+      border: 1px solid rgba(148, 163, 184, 0.38);
+      background: radial-gradient(circle at top, rgba(59,130,246,0.22), rgba(15,23,42,1) 55%);
+      padding: 18px 18px 16px;
+      box-shadow: var(--shadow-soft);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card-badge {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(15,23,42,0.8);
+      border: 1px solid rgba(148,163,184,0.4);
+      font-size: 10px;
+      color: #e5e7eb;
+    }
+
+    .hero-metric-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+
+    .hero-metric {
+      flex: 1;
+      padding: 10px 12px;
+      border-radius: 16px;
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      background: rgba(15,23,42,0.85);
+      font-size: 11px;
+    }
+
+    .hero-metric-label {
+      color: var(--muted);
+      margin-bottom: 2px;
+    }
+
+    .hero-metric-value {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .hero-metric-value span {
+      font-size: 11px;
+      color: var(--muted);
+      font-weight: 400;
+      margin-left: 4px;
+    }
+
+    .hero-timeline {
+      border-radius: 16px;
+      border: 1px dashed rgba(148,163,184,0.45);
+      padding: 8px 10px;
+      font-size: 11px;
+      margin-bottom: 10px;
+      color: var(--muted);
+    }
+
+    .hero-card-foot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    .avatar-group {
+      display: flex;
+      align-items: center;
+    }
+
+    .avatar-dot {
+      width: 22px;
+      height: 22px;
+      border-radius: 999px;
+      border: 2px solid rgba(15,23,42,0.9);
+      background: linear-gradient(135deg, #38bdf8, #6366f1);
+      margin-left: -6px;
+    }
+
+    .avatar-dot:first-child {
+      margin-left: 0;
+    }
+
+    .hero-card-foot strong {
+      color: #e5e7eb;
+    }
+
+    /* Section titles */
+
+    .section-header {
+      text-align: center;
+      max-width: 640px;
+      margin: 0 auto 28px;
+    }
+
+    .section-eyebrow {
+      text-transform: uppercase;
+      letter-spacing: .16em;
+      font-size: 11px;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    .section-title {
+      font-size: 22px;
+      margin-bottom: 6px;
+    }
+
+    .section-subtitle {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    /* Benefits */
+
+    .benefit-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .benefit-card {
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      background: rgba(15, 23, 42, 0.92);
+      padding: 14px 14px 12px;
+      box-shadow: var(--shadow-small);
+    }
+
+    .benefit-icon {
+      width: 24px;
+      height: 24px;
+      border-radius: 999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      background: var(--primary-soft);
+      margin-bottom: 8px;
+    }
+
+    .benefit-title {
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+
+    .benefit-text {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    /* Role overview */
+
+    .role-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 10px;
+    }
+
+    .role-card {
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      background: rgba(15, 23, 42, 0.95);
+      padding: 12px 12px 10px;
+      font-size: 13px;
+    }
+
+    .role-tag {
+      font-size: 11px;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    .role-card h3 {
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+
+    .role-card ul {
+      padding-left: 18px;
+      margin: 4px 0;
+      color: var(--muted);
+    }
+
+    .role-card li {
+      margin-bottom: 2px;
+    }
+
+    /* Process */
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .process-step {
+      border-radius: var(--radius-lg);
+      border: 1px dashed rgba(148, 163, 184, 0.6);
+      padding: 12px 12px 10px;
+      background: rgba(15,23,42,0.9);
+      font-size: 13px;
+      position: relative;
+    }
+
+    .process-number {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .16em;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    .process-label {
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .process-text {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    /* Fit section */
+
+    .fit-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 6px;
+    }
+
+    .fit-card {
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      background: rgba(15, 23, 42, 0.95);
+      padding: 12px 14px;
+      font-size: 13px;
+    }
+
+    .fit-card h3 {
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+
+    .fit-card ul {
+      padding-left: 18px;
+      color: var(--muted);
+    }
+
+    .fit-card li {
+      margin-bottom: 2px;
+    }
+
+    /* Testimonials */
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .testimonial-card {
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(148,163,184,0.35);
+      background: rgba(15,23,42,0.9);
+      padding: 12px 12px 10px;
+      font-size: 13px;
+    }
+
+    .testimonial-name {
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+
+    .testimonial-role {
+      font-size: 11px;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    .testimonial-text {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    /* FAQ */
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 12px;
+    }
+
+    .faq-item {
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      background: rgba(15, 23, 42, 0.9);
+      padding: 10px 12px 9px;
+      font-size: 13px;
+    }
+
+    .faq-question {
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .faq-answer {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    /* Form section */
+
+    .apply-section {
+      padding: 38px 0 50px;
+    }
+
+    .apply-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: 24px;
+      align-items: flex-start;
+    }
+
+    .apply-card {
+      border-radius: var(--radius-xl);
+      border: 1px solid rgba(148,163,184,0.5);
+      background: radial-gradient(circle at top left, rgba(37,99,235,0.25), rgba(15,23,42,1) 50%);
+      padding: 18px 18px 16px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .apply-card h2 {
+      font-size: 20px;
+      margin-bottom: 6px;
+    }
+
+    .apply-card p {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    .apply-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 10px;
+      font-size: 11px;
+    }
+
+    .apply-badge {
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(15,23,42,0.9);
+      border: 1px solid rgba(148,163,184,0.4);
+      color: var(--muted);
+    }
+
+    .apply-hint {
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    .form-card {
+      border-radius: var(--radius-xl);
+      border: 1px solid rgba(148,163,184,0.5);
+      background: rgba(15,23,42,0.96);
+      padding: 18px 18px 14px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    form {
+      display: grid;
+      gap: 10px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    label {
+      font-size: 12px;
+      color: var(--muted);
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid rgba(148,163,184,0.6);
+      background: rgba(15,23,42,0.95);
+      color: var(--text);
+      font-size: 13px;
+      padding: 8px 9px;
+      outline: none;
+      transition: border-color .15s ease-out, box-shadow .15s ease-out;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 1px rgba(37,99,235,0.4);
+    }
+
+    textarea {
+      min-height: 90px;
+      resize: vertical;
+    }
+
+    .form-foot {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 4px;
+    }
+
+    .checkbox-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    .checkbox-row input[type="checkbox"] {
+      width: 14px;
+      height: 14px;
+      margin-top: 2px;
+    }
+
+    .form-note {
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    .form-note span {
+      color: #e5e7eb;
+    }
+
+    .form-note a {
+      text-decoration: underline;
+      text-decoration-style: dotted;
+    }
+
+    /* Footer */
+
+    footer {
+      border-top: 1px solid rgba(148,163,184,0.24);
+      padding: 14px 0 18px;
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    .footer-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a:hover {
+      color: #e5e7eb;
+    }
+
+    /* Responsive */
+
+    @media (max-width: 900px) {
+      .hero-grid,
+      .apply-layout {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .hero-card {
+        order: -1;
+      }
+      .nav-links {
+        display: none;
+      }
+      .benefit-grid,
+      .role-grid,
+      .process-grid,
+      .fit-grid,
+      .testimonials-grid,
+      .faq-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      section {
+        padding: 34px 0;
+      }
+      .hero {
+        padding-top: 26px;
+      }
+      .benefit-grid,
+      .role-grid,
+      .process-grid,
+      .fit-grid,
+      .testimonials-grid,
+      .faq-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .hero-cta {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .form-row {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .apply-layout {
+        gap: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="container nav">
+      <div class="logo">
+        <div class="logo-mark">F</div>
+        <div>
+          <div style="font-size:13px;">Finanzpartner Karriere</div>
+          <div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.14em;">
+            Versicherungen · Investment · Immobilien
+          </div>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="#rolle" class="nav-link">Die Rolle</a>
+        <a href="#vorteile" class="nav-link">Deine Vorteile</a>
+        <a href="#ablauf" class="nav-link">Ablauf</a>
+        <a href="#bewerbung" class="btn btn-primary">Jetzt bewerben</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">
+            <div class="eyebrow-pill">Jetzt Teamaufbau 2025</div>
+            <span>Begrenzte Plätze für neue Partner</span>
+          </div>
+          <h1 class="hero-title">
+            Baue dir als<span> Finanzberater</span> ein überdurchschnittliches Einkommen auf – mit einem starken Partner im Rücken.
+          </h1>
+          <p class="hero-subtitle">
+            Wir suchen ambitionierte Menschen, die im Bereich Versicherungen, Investment und Immobilien eine nachhaltige Karriere
+            aufbauen wollen – mit moderner Beratung, digitalem Vertrieb und klaren Entwicklungsperspektiven.
+          </p>
+
+          <div class="hero-pills">
+            <div class="pill">Strukturierter Einstieg – auch als Quereinsteiger</div>
+            <div class="pill">Transparente Einkommens- & Provisionsmodelle</div>
+            <div class="pill">Digitale Tools & starke Produktpartner</div>
+          </div>
+
+          <div class="hero-cta">
+            <a href="#bewerbung" class="btn btn-primary">
+              <span>Jetzt in 60 Sekunden bewerben</span>
+              <span>→</span>
+            </a>
+            <a href="#ablauf" class="btn btn-outline">Mehr zur Zusammenarbeit</a>
+          </div>
+
+          <div class="hero-trust">
+            <span>✓</span>
+            <div>
+              Unverbindlich · Kein Lebenslauf nötig · Wir melden uns binnen <strong>24 Stunden</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card" aria-hidden="true">
+          <div class="hero-card-badge">Karriere im Finanzvertrieb</div>
+          <div class="hero-metric-row">
+            <div class="hero-metric">
+              <div class="hero-metric-label">Einkommensperspektive</div>
+              <div class="hero-metric-value">6-stellig<span>bei Vollzeit & Leistung</span></div>
+            </div>
+            <div class="hero-metric">
+              <div class="hero-metric-label">Einstieg</div>
+              <div class="hero-metric-value">3–6 Monate<span>bis stabilem Einkommen</span></div>
+            </div>
+          </div>
+          <div class="hero-timeline">
+            <strong>Dein Weg:</strong> Strukturierte Ausbildung · gemeinsame Kundentermine · eigenes Kundenbuch · Aufbau eigenes Teams
+          </div>
+          <div class="hero-card-foot">
+            <div style="display:flex;align-items:center;gap:8px;">
+              <div class="avatar-group">
+                <div class="avatar-dot"></div>
+                <div class="avatar-dot"></div>
+                <div class="avatar-dot"></div>
+              </div>
+              <div>
+                <strong>Über 50+ aktive Partner</strong><br>
+                im Team – vom Quereinsteiger bis zum Profi.
+              </div>
+            </div>
+            <div>
+              <div style="font-size:11px;color:var(--muted);text-align:right;">Standort</div>
+              <div style="font-size:12px;">Deutschlandweit · Hybride Beratung</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROLE OVERVIEW -->
+    <section id="rolle">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Die Rolle</div>
+          <h2 class="section-title">Was du als Finanzberater bei uns wirklich machst</h2>
+          <p class="section-subtitle">
+            Du begleitest deine Kunden langfristig in den drei wichtigsten Bereichen: Absicherung, Vermögensaufbau und Immobilien.
+            Kein „Produktverkauf um jeden Preis“, sondern ehrliche, bedarfsorientierte Beratung.
+          </p>
+        </div>
+
+        <div class="role-grid">
+          <div class="role-card">
+            <div class="role-tag">Versicherungen</div>
+            <h3>Absicherung & Existenzschutz</h3>
+            <ul>
+              <li>Analyse der aktuellen Situation der Kunden</li>
+              <li>Konzept für Risikoabsicherung & Altersvorsorge</li>
+              <li>Langfristige Betreuung & Anpassung</li>
+            </ul>
+          </div>
+          <div class="role-card">
+            <div class="role-tag">Investment</div>
+            <h3>Vermögensaufbau & Investment</h3>
+            <ul>
+              <li>Einführung in strukturierte Investmentkonzepte</li>
+              <li>Regelmäßige Sparpläne & Strategien für Kunden</li>
+              <li>Orientierung an transparenten, nachvollziehbaren Strategien</li>
+            </ul>
+          </div>
+          <div class="role-card">
+            <div class="role-tag">Immobilien</div>
+            <h3>Immobilien & Finanzierung</h3>
+            <ul>
+              <li>Begleitung bei der Finanzierung von Immobilien</li>
+              <li>Zusammenarbeit mit starken Bank- & Produktpartnern</li>
+              <li>Langfristiger Vermögensaufbau über Sachwerte</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section id="vorteile">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Deine Vorteile</div>
+          <h2 class="section-title">Warum sich diese Chance für dich lohnen kann</h2>
+          <p class="section-subtitle">
+            Unser System ist darauf ausgerichtet, dass du in kurzer Zeit professionell beraten kannst – und langfristig ein
+            stabiles, wachsendes Einkommen aus Neu- und Bestandskunden aufbaust.
+          </p>
+        </div>
+
+        <div class="benefit-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon">€</div>
+            <h3 class="benefit-title">Überdurchschnittliche Einkommenschancen</h3>
+            <p class="benefit-text">
+              Attraktives Provisions- und Bestandseinkommen. Dein Einsatz und deine Entwicklung spiegeln sich direkt
+              im Einkommen wider – ohne Deckel nach oben.
+            </p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">✓</div>
+            <h3 class="benefit-title">Ausbildung & Begleitung</h3>
+            <p class="benefit-text">
+              Du erhältst eine strukturierte fachliche Ausbildung (z. B. IHK-Zertifizierung) und wirst in Kundenterminen
+              Schritt für Schritt begleitet, bis du sicher auf eigenen Beinen stehst.
+            </p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">👥</div>
+            <h3 class="benefit-title">Qualifizierte Leads & Empfehlungen</h3>
+            <p class="benefit-text">
+              Du profitierst von erprobten Systemen zur Kundengewinnung, Online-Leads, Veranstaltungen und Empfehlungsmarketing –
+              statt „kalter“ Akquise.
+            </p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">⏱</div>
+            <h3 class="benefit-title">Zeitliche & örtliche Freiheit</h3>
+            <p class="benefit-text">
+              Du arbeitest mobil und flexibel – im Büro, von zu Hause oder beim Kunden. Ideal, um Beruf, Familie und persönliche Ziele
+              miteinander zu verbinden.
+            </p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">📈</div>
+            <h3 class="benefit-title">Klare Karrierestufen</h3>
+            <p class="benefit-text">
+              Vom Einzelberater bis zum eigenen Team mit Führungsverantwortung: Du bekommst ein transparentes Modell, wie du dich
+              fachlich und unternehmerisch weiterentwickeln kannst.
+            </p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">🛠</div>
+            <h3 class="benefit-title">Digitale Tools & Backoffice</h3>
+            <p class="benefit-text">
+              Moderne Beratungssoftware, digitale Unterschriften, CRM und Backoffice-Unterstützung nehmen dir viele
+              organisatorische Aufgaben ab, damit du dich auf Kunden konzentrieren kannst.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS & FIT -->
+    <section id="ablauf">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Ablauf & Eignung</div>
+          <h2 class="section-title">So läuft dein Einstieg – und für wen es geeignet ist</h2>
+          <p class="section-subtitle">
+            Kein 20-stufiger Bewerbungsprozess. Wir lernen uns kennen, prüfen gemeinsam, ob es menschlich und fachlich passt
+            und gehen dann die nächsten Schritte.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-step">
+            <div class="process-number">Schritt 1</div>
+            <div class="process-label">Kurzbewerbung ausfüllen</div>
+            <p class="process-text">
+              Du hinterlässt ein paar Basisdaten – ohne Lebenslauf. Dauer: ca. 60 Sekunden.
+            </p>
+          </div>
+          <div class="process-step">
+            <div class="process-number">Schritt 2</div>
+            <div class="process-label">Erstgespräch (online oder vor Ort)</div>
+            <p class="process-text">
+              Wir sprechen über deine Ziele, Erfahrung und klären alle offenen Fragen.
+            </p>
+          </div>
+          <div class="process-step">
+            <div class="process-number">Schritt 3</div>
+            <div class="process-label">Einblick & Onboarding</div>
+            <p class="process-text">
+              Du erhältst Einblick in unser System, Produkte, Ausbildung und Einkommensmodelle.
+            </p>
+          </div>
+          <div class="process-step">
+            <div class="process-number">Schritt 4</div>
+            <div class="process-label">Start mit Begleitung</div>
+            <p class="process-text">
+              Gemeinsame Kundentermine, praxisnahe Schulungen – wir gehen die ersten Schritte gemeinsam.
+            </p>
+          </div>
+        </div>
+
+        <div style="height:18px;"></div>
+
+        <div class="fit-grid">
+          <div class="fit-card">
+            <h3>Das passt sehr gut zu dir, wenn…</h3>
+            <ul>
+              <li>du Freude daran hast, mit Menschen zu arbeiten und zuzuhören.</li>
+              <li>du bereit bist, Verantwortung für deine Ergebnisse zu übernehmen.</li>
+              <li>du dir ein höheres Einkommen als im klassischen Angestelltenverhältnis wünschst.</li>
+              <li>du langfristig ein eigenes Kundenbuch und ggf. ein Team aufbauen möchtest.</li>
+              <li>du offen bist, dich fachlich und persönlich weiterzuentwickeln.</li>
+            </ul>
+          </div>
+          <div class="fit-card">
+            <h3>Es ist eher nichts für dich, wenn…</h3>
+            <ul>
+              <li>du ein „9-to-5 mit Dienst nach Vorschrift“ suchst.</li>
+              <li>du keine Lust hast, mit Menschen zu sprechen oder Lösungen zu erklären.</li>
+              <li>du Veränderung und Lernen vermeiden willst.</li>
+              <li>du kurzfrischtig „schnelles Geld“ ohne Leistung erwartest.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Erfahrungen</div>
+          <h2 class="section-title">Was Partner über die Zusammenarbeit sagen</h2>
+          <p class="section-subtitle">
+            Einige Stimmen aus dem Team. Original-Zitate können hier später durch echte Partnerstimmen ersetzt werden.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-name">Max M.</div>
+            <div class="testimonial-role">Quereinsteiger, heute Teamleiter</div>
+            <p class="testimonial-text">
+              „Ich komme ursprünglich nicht aus der Finanzbranche. Durch die enge Begleitung und klare Strukturen hatte ich nach
+              wenigen Monaten meine ersten eigenen Stammkunden – heute führe ich mein eigenes Team.“
+            </p>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-name">Sarah K.</div>
+            <div class="testimonial-role">Ehemalige Bankkauffrau</div>
+            <p class="testimonial-text">
+              „Ich wollte mehr Freiheit und mehr Möglichkeiten beim Einkommen als im klassischen Filialbetrieb. Hier kann ich
+              wirklich nach Bedarf beraten – ohne Produktdruck – und mein Einkommen ist deutlich gestiegen.“
+            </p>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-name">Jonas R.</div>
+            <div class="testimonial-role">Student, nebenberuflicher Berater</div>
+            <p class="testimonial-text">
+              „Ich habe neben dem Studium gestartet und baue mir Schritt für Schritt ein Kundenbuch auf. Die zeitliche Flexibilität
+              ist für mich Gold wert – und nach dem Abschluss kann ich direkt Vollzeit durchstarten.“
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Fragen & Antworten</div>
+          <h2 class="section-title">Häufige Fragen zur Zusammenarbeit</h2>
+          <p class="section-subtitle">
+            Wenn du noch Fragen hast, klären wir alles im persönlichen Gespräch. Hier ein erster Überblick.
+          </p>
+        </div>
+
+        <div class="faq-grid">
+          <div class="faq-item">
+            <div class="faq-question">Brauche ich Vorerfahrung in der Finanzbranche?</div>
+            <div class="faq-answer">
+              Nein. Vorerfahrung ist ein Vorteil, aber keine Voraussetzung. Wichtig sind Lernbereitschaft, Zuverlässigkeit
+              und Freude am Umgang mit Menschen. Fachliches Wissen bauen wir gemeinsam mit dir auf.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Wie läuft die Vergütung?</div>
+            <div class="faq-answer">
+              Es handelt sich in der Regel um eine selbstständige Tätigkeit mit Provisions- und Bestandseinkommen.
+              Die genauen Modelle besprechen wir transparent im Gespräch, inkl. Praxisbeispielen und Entwicklungsszenarien.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Ist ein Start auch nebenberuflich möglich?</div>
+            <div class="faq-answer">
+              Ja, ein Einstieg nebenberuflich ist in vielen Fällen möglich und sogar sinnvoll, um das Geschäft kennenzulernen
+              und sich ein stabiles Fundament aufzubauen, bevor du ggf. in die Vollzeit gehst.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Welche Ausbildung erhalte ich?</div>
+            <div class="faq-answer">
+              Du erhältst sowohl fachliche Schulungen (z. B. Vorbereitung auf IHK-Zertifizierungen) als auch praxisnahe Trainings
+              zu Beratung, Vertrieb, Mindset und Kundenbetreuung – kombiniert mit echter Begleitung in Terminen.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Wie schnell kann ich starten?</div>
+            <div class="faq-answer">
+              Nach dem Erstgespräch und gegenseitigem Go können wir die nächsten Schritte zügig einleiten. Viele Partner starten
+              innerhalb von 2–4 Wochen mit der Ausbildung und ersten begleiteten Terminen.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Was passiert nach dem Absenden der Bewerbung?</div>
+            <div class="faq-answer">
+              Wir prüfen deine Angaben, melden uns in der Regel binnen 24 Stunden und vereinbaren ein kurzes Kennenlerngespräch,
+              in dem wir gemeinsam schauen, ob und wie eine Zusammenarbeit Sinn ergibt.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPLY -->
+    <section class="apply-section" id="bewerbung">
+      <div class="container apply-layout">
+        <div class="apply-card">
+          <h2>Bewirb dich jetzt unverbindlich als Finanzberater / Partner</h2>
+          <p>
+            Fülle die Kurzbewerbung aus und wir melden uns zeitnah bei dir. Im Erstgespräch klären wir gemeinsam, ob die
+            Zusammenarbeit zu deinen Zielen, deiner Situation und deinen Vorstellungen passt.
+          </p>
+
+          <div class="apply-badges">
+            <div class="apply-badge">👤 Kein Lebenslauf nötig</div>
+            <div class="apply-badge">📍 Deutschlandweit / hybrid</div>
+            <div class="apply-badge">⏱ Erstgespräch ca. 20–30 Minuten</div>
+            <div class="apply-badge">🔒 Vertrauliche Behandlung deiner Angaben</div>
+          </div>
+
+          <p class="apply-hint">
+            Tipp: Beschreibe unten kurz, was dich aktuell beschäftigt (z. B. berufliche Situation, Einkommensziel, Wunsch nach
+            Veränderung). So können wir dir im Gespräch direkt passende Perspektiven aufzeigen.
+          </p>
+        </div>
+
+        <div class="form-card">
+          <!-- HIER später deine Ziel-URL / Backend hinterlegen -->
+          <form action="#" method="post">
+            <div class="form-row">
+              <div>
+                <label for="vorname">Vorname *</label>
+                <input type="text" id="vorname" name="vorname" required>
+              </div>
+              <div>
+                <label for="nachname">Nachname *</label>
+                <input type="text" id="nachname" name="nachname" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div>
+                <label for="telefon">Telefon / WhatsApp *</label>
+                <input type="tel" id="telefon" name="telefon" required>
+              </div>
+              <div>
+                <label for="email">E-Mail *</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div>
+                <label for="ort">Wohnort / Region *</label>
+                <input type="text" id="ort" name="ort" required>
+              </div>
+              <div>
+                <label for="verfuegbarkeit">Verfügbarkeit *</label>
+                <select id="verfuegbarkeit" name="verfuegbarkeit" required>
+                  <option value="" disabled selected>Bitte wählen…</option>
+                  <option value="nebenberuflich">Nebenberuflich</option>
+                  <option value="vollzeit">Vollzeit</option>
+                  <option value="beides">Zunächst nebenberuflich, später Vollzeit</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div>
+                <label for="erfahrung">Erfahrung im Finanzbereich</label>
+                <select id="erfahrung" name="erfahrung">
+                  <option value="" disabled selected>Bitte wählen…</option>
+                  <option value="keine">Keine – Quereinsteiger</option>
+                  <option value="grundlegend">Grundkenntnisse / erste Berührungspunkte</option>
+                  <option value="bank">Bank / Versicherung / Finanzvertrieb</option>
+                  <option value="selbststaendig">Bereits selbstständig in der Beratung</option>
+                </select>
+              </div>
+              <div>
+                <label for="einkommen">Einkommensziel (12–24 Monate)</label>
+                <select id="einkommen" name="einkommen">
+                  <option value="" disabled selected>Bitte wählen…</option>
+                  <option value="bis40000">Bis 40.000 € / Jahr</option>
+                  <option value="40-80000">40.000–80.000 € / Jahr</option>
+                  <option value="80-120000">80.000–120.000 € / Jahr</option>
+                  <option value="120000plus">120.000 €+ / Jahr</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="situation">Deine aktuelle Situation & Motivation *</label>
+              <textarea id="situation" name="situation" required placeholder="Beschreibe kurz: Was machst du aktuell beruflich? Warum interessierst du dich für diese Chance? Was möchtest du in den nächsten 12–24 Monaten erreichen?"></textarea>
+            </div>
+
+            <div class="form-foot">
+              <label class="checkbox-row">
+                <input type="checkbox" name="datenschutz" required>
+                <span>Ich habe die Hinweise zum Datenschutz zur Kenntnis genommen und bin damit einverstanden, dass meine Angaben
+                  zur Kontaktaufnahme und für Rückfragen gespeichert und verarbeitet werden.</span>
+              </label>
+
+              <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Jetzt unverbindlich bewerben</button>
+
+              <div class="form-note">
+                * Pflichtfelder · Deine Daten werden <span>vertraulich</span> behandelt und nicht an unbeteiligte Dritte weitergegeben.
+                Weitere Informationen findest du in unserer <a href="#">Datenschutzerklärung</a>.
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <div>© <span id="year"></span> Finanzpartner Karriere – Alle Rechte vorbehalten.</div>
+      <div class="footer-links">
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutzerklärung</a>
+        <a href="#bewerbung">Jetzt bewerben</a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script>
+  // Aktuelles Jahr im Footer setzen
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Simple Scroll zu Anker-Links
+  document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+    anchor.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href').substring(1);
+      const target = document.getElementById(targetId);
+      if (target) {
+        e.preventDefault();
+        window.scrollTo({
+          top: target.offsetTop - 70,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+</script>
+</body>
+</html>
